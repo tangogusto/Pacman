@@ -1,0 +1,32 @@
+var pos = 0;
+const pacArray = [
+    ['mypacman1.png', 'mypacman2.png'],
+    ['mypacman3.png', 'mypacman4.png']
+];
+var direction = 0;
+var focus = 0;
+
+function Run() {
+    let img = document.getElementById("myPacman");
+    let imgWidth = img.width
+    focus = (focus + 1) % 2;
+    direction = checkPageBounds(direction, imgWidth);
+    img.src = pacArray[direction][focus];
+    if (direction) {
+        pos -= 20;
+        img.style.left = pos + "px";
+    } else {
+        pos += 20;
+        img.style.left = pos + 'px';
+    }
+    // Use setTimeout to call Run every 300 millesecs
+}
+setInterval(Run, 300);
+function checkPageBounds(direction, imgWidth) {
+    let pageWidth = window.innerWidth;
+    if (direction == 0 && pos + imgWidth > pageWidth) 
+            direction = 1; 
+    if (direction == 1 && pos < 0) direction = 0;
+    
+    return direction;
+}
