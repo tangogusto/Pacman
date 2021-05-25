@@ -1,6 +1,6 @@
 # pacman
 Animated pacman 
 
-🎯 The goal is to demonstate this yellow figure moving back and forth.
+🎯 The goal is to demonstate this yellow figure moving back and forth of the web page.
 
-<img src = 'mypacman5.png'> 
+<img src = 'mypacman5.png' width="340" height="290"> 
