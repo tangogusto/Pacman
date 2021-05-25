@@ -5,4 +5,4 @@ Animated pacman
 
 <img src = 'mypacman5.png' width="340" height="290"> 
 
-<a href="anyapages.github.io/pacman.html">Interactive version</a>
+<a href="https://anyapages.github.io/pacman.html">Interactive version</a>
